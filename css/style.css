@@ -8,6 +8,10 @@
 	clear: both;
 }
 
+a {
+	color: #96AEBE;
+}
+
 body {
 	background: url("../images/background.slice.png"), url("../images/background.slice.2.png");
 	margin: 0;
@@ -111,7 +115,7 @@ video {
 	vertical-align: middle;
 	margin-top: 20px;
 	margin-left: 20px;
-	width: 90px;
+	width: 82px;
 	height: 30px;
 	line-height: 30px;
 	border-radius: 5px;

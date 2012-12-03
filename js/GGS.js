@@ -72,7 +72,7 @@ function setHeights() {
 ender.domReady(function () {
 	
 /* 	Add control classes and switch element */
-	ender('body').addClass('ggs-hidden ggs-animated').append('<div id="ggs-switch"><div class="ggs-switchBar"></div><div class="ggs-switchBar"></div><div class="ggs-switchBar"></div></div>');
+	ender('body').addClass('ggs-hidden').append('<div id="ggs-switch"><div class="ggs-switchBar"></div><div class="ggs-switchBar"></div><div class="ggs-switchBar"></div></div>');
 
 /*  Create CSS */
 	var styles = '\

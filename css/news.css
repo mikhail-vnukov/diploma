@@ -1,0 +1,18 @@
+article {
+	/*border-bottom: 1px solid;*/
+	padding-bottom: 24px;
+	min-height: 70px;
+}
+
+.date {
+	font-style: italic;
+	margin-bottom: 3px;
+}
+
+article img {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 14px;
+}
