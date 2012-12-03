@@ -3,55 +3,111 @@
 		<title></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	</head>
-	<body>
-		<div class="site"> 
-			<div class="header">
-				<div class="navigation">
-					<div class="sectors">
-						<a class="sector" href="demo.html">Главная</a>
-						<div class="sector selected" >Музыка</div>
-						<a class="sector" href="#">Фото</a>
-						<a class="sector" href="video.html">Видео</a>
-						<a class="sector" href="#">О нас</a>
-					</div>
-					<div class="search">
-						<input class="search-input"> </input>
-						<button class="search-button"/>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="content">
-					<h1> Музыка </h1>
+		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<script type="text/javascript" src="js/GGS.js"></script> 
 
-					<p>
-						<audio controls="controls">
-							<source src="resources/Teenage Manager - Hey, baby, hey!.mp3" type="audio/mp3"/>
-							Your browser does not support this audio format.
-						</audio>
+		<script src="js/audiojs/audio.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-					</p>
-					<p>
-						Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
-					</p>
-					<p>
-						Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
-					</p>
+		<script>
+		$(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+        	trackEnded: function() {
+        		var next = $('ol li.playing').next();
+        		if (!next.length) next = $('ol li').first();
+        		next.addClass('playing').siblings().removeClass('playing');
+        		audio.load($('a', next).attr('data-src'));
+        		audio.play();
+        	}
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+        first = $('ol a').attr('data-src');
+        $('ol li').first().addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('ol li').click(function(e) {
+        	e.preventDefault();
+        	$(this).addClass('playing').siblings().removeClass('playing');
+        	audio.load($('a', this).attr('data-src'));
+        	audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+        	var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+             if (unicode == 39) {
+             	var next = $('li.playing').next();
+             	if (!next.length) next = $('ol li').first();
+             	next.click();
+            // back arrow
+        } else if (unicode == 37) {
+        	var prev = $('li.playing').prev();
+        	if (!prev.length) prev = $('ol li').last();
+        	prev.click();
+            // spacebar
+        } else if (unicode == 32) {
+        	audio.playPause();
+        }
+    })
+    });		</script>
+
+</head>
+<body>
+	<div class="site"> 
+		<div class="header">
+			<div class="navigation">
+				<div class="sectors">
+					<a class="sector" href="demo.html">Главная</a>
+					<a class="sector" href="#">Новости</a>
+
+					<div class="sector selected" >Музыка</div>
+					<a class="sector" href="#">Фото</a>
+					<a class="sector" href="video.html">Видео</a>
 				</div>
-				<div class="sidebar">
+				<div class="search">
+					<input class="search-input"> </input>
+					<button class="search-button"/>
 				</div>
 			</div>
-			<div class="footer">
-				<div class="social-icons">
-					<ul>
-						<li class="facebook"><img src="images/icons/facebook.png"/></li>
-						<li class="twitter"><img src="images/icons/twitter.png"/></li>
-						<li class="vkontakte"><img src="images/icons/vkontakte.png"/></li>
-						<li class="myspace"><img src="images/icons/myspace.png"/></li>
-					</ul>
+		</div>
+		<div class="container">
+			<div class="content">
+				<h1> Музыка </h1>
+
+				<div class="album">
+					<div class="album-art"></div>
+					<div class="album-text">
+						<h2>Little Johny EP </h2> 
+						<ol class="playlist">
+							<li><a href="#" data-src="resources/Teenage Manager - Hey, baby, hey!.mp3">Hey, baby, hey!</a></li>
+							<li><a href="#" data-src="resources/Teenage Manager - Remember the Day.mp3">Remember the Day</a></li>
+							<li><a href="#" data-src="resources/Teenage Manager - Little Johnny.mp3">Little Johnny</a></li>
+							<li><a href="#" data-src="resources/Teenage Manager - Lucky guy.mp3">Lucky guy</a></li>
+
+						</ol>
+					</div>
 				</div>
-				<div class="copyright">© Elena Fedorova 2012</div>
+
+				<audio preload></audio>
+
 			</div>
-		</body>
-		</html>
+			<div class="sidebar">
+			</div>
+		</div>
+		<div class="footer">
+			<div class="social-icons">
+				<ul>
+					<li class="facebook"><img src="images/icons/facebook.png"/></li>
+					<li class="twitter"><img src="images/icons/twitter.png"/></li>
+					<li class="vkontakte"><img src="images/icons/vkontakte.png"/></li>
+					<li class="myspace"><img src="images/icons/myspace.png"/></li>
+				</ul>
+			</div>
+			<div class="copyright">© Elena Fedorova 2012</div>
+		</div>
+	</body>
+	</html>

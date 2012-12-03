@@ -1,0 +1,68 @@
+.album-art {
+	float: left;
+	width: 240px;
+	height: 240px;
+	background: url('../images/album_cover.jpg');
+	background-size: 100%;
+	margin: 0 10px 0 0;
+}
+
+.album-text {
+	float: left;
+	border: 1px solid #96AEBE;
+	padding-bottom: 52px;
+	padding-right: 112px;
+}
+
+.playlist {
+	padding-top: 10px;
+
+}
+ li {
+	color: #C0B3C4;
+}
+.playlist a {
+
+	font-size: 18px;
+	line-height: 26px;
+}
+
+a {
+	color: inherit;
+}
+.playing {
+	color: #96AEBE;
+}
+
+h2 {
+	margin-left: 20px;
+	color: #96AEBE;
+}
+
+.audiojs {
+	margin-top: 40px;
+	width: auto !important;
+}
+
+.scrubber {
+	width: 420px !important;
+}
+
+.time {
+	float: right !important;
+}
+
+.album {
+	background-color: #383431;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 10px #121212;
+}
+.album:after {
+	clear: both;
+	display: block;
+	font: 1px/0px serif;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
