@@ -34,6 +34,9 @@ h1 {
 	margin: 0 auto;
 	border-color: transparent;
 	border-width: 0 91px;
+	/*color: #96AEBE;*/
+	/*color: #b5d2e5;*/
+	color: #C0B3C4;
 
 	height: auto !important;
 	min-height: 100%;
@@ -77,7 +80,6 @@ h1 {
 	/*min-height: 100%;*/
 	/*56, 52, 49*/
 	padding: 6px 50px;	
-	color: #c0b3c4;
 	float: left;
 	background-color: rgba(28, 26, 24, 0.9);
 
@@ -105,9 +107,12 @@ h1 {
 	/*width: 66%;*/
 	margin-left: 30px;
 }
+.sector {
+	color: #b5d2e5;
+}
 
 .sector {
-	color: #96AEBE;
+	/*color: #96AEBE;*/
 	background-color: #383431;
 	float: left;
 	text-align: center;
@@ -220,6 +225,10 @@ h1 {
 .copyright {
 	padding-top: 40px;
 	margin-left: 40px;
+	color: #96AEBE;
+}
+
+.copyright a {
 	color: #96AEBE;
 }
 

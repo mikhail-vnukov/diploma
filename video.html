@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/media.css"/>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery/jquery.min.js"></script>
 	<script src="js/galleria/galleria-1.2.8.min.js"></script>
 	<script type="text/javascript" src="js/GGS.js"></script> 
 
@@ -15,21 +15,16 @@
 		thumb: 'resources/video1.thumb.jpg',
 		image: 'resources/video1.thumb.jpg',
 		title: 'Наша репитиция)',
+layer: '<video class="media" controls="controls"> <source src="resources/video1.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
+},
+{
+	thumb: 'resources/video2.thumb.jpg',
+	image: 'resources/video2.thumb.jpg',
+	title: 'Видео с концерта!',
 
 
-		layer: '<video class="media" controls="controls"> <source src="resources/video1.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
-	},
-	{
-		thumb: 'resources/video2.thumb.jpg',
-		image: 'resources/video2.thumb.jpg',
-		title: 'Видео с концерта!',
-
-
-		layer: '<video class="media" controls="controls"> <source src="resources/video2.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
+	layer: '<video class="media" controls="controls"> <source src="resources/video2.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
 }
-
-
-
 ];
 
 $(document).ready(function() {
@@ -99,13 +94,13 @@ $(document).ready(function() {
 		<div class="footer">
 			<div class="social-icons">
 				<ul>
-					<li class="facebook"><img src="images/icons/facebook.png"/></li>
-					<li class="twitter"><img src="images/icons/twitter.png"/></li>
-					<li class="vkontakte"><img src="images/icons/vkontakte.png"/></li>
-					<li class="myspace"><img src="images/icons/myspace.png"/></li>
+					<li class="facebook"></li>
+					<li class="twitter"></li>
+					<li class="vkontakte"></li>
+					<li class="myspace"></li>
 				</ul>
 			</div>
-			<div class="copyright">© Elena Fedorova 2012</div>
+			<div class="copyright">© <a href="http://www.facebook.com/elena.fedorova.75641">Elena Fedorova</a> 2012</div>
 		</div>
 	</div>
 </body>
