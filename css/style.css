@@ -21,6 +21,7 @@ body {
 	border-width: 0 64px;
 	border-color: transparent;
 	border-image: url("../images/border.png") 0 64 0 64 repeat;
+	height: 100%;
 }
 
 h1 {
@@ -83,12 +84,12 @@ h1 {
 	float: left;
 	background-color: rgba(28, 26, 24, 0.9);
 
-	padding-bottom: 30px;   /* Height of the footer */
+	/*padding-bottom: 30px;    Height of the footer */
 	
 }
 
 .container {
-	min-height: 547px;
+	min-height: 520px;
 }
 
 .container:after {
