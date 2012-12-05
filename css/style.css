@@ -84,12 +84,13 @@ h1 {
 	float: left;
 	background-color: rgba(28, 26, 24, 0.9);
 
-	/*padding-bottom: 30px;    Height of the footer */
+	margin-bottom: 30px;    
+	/*Height of the footer */
 	
 }
 
 .container {
-	min-height: 520px;
+	min-height: 515px;
 }
 
 .container:after {
@@ -104,6 +105,7 @@ h1 {
 	float: right;
 	width: 337px;
 	height: 533px;
+	position: relative;
 }
 
 .top-logo {
@@ -114,7 +116,7 @@ h1 {
 .bottom-logo {
 	position: absolute;
 	width: 337px;
-	bottom: 100px;
+	bottom: 0;
 	height: 100px;
 	background: url('../images/bottom_logo.png') no-repeat;
 }
