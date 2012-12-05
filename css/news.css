@@ -5,8 +5,8 @@ article {
 }
 
 .date {
-	font-style: italic;
 	margin-bottom: 3px;
+	font-weight: bold;
 }
 
 article img {

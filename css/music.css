@@ -9,7 +9,7 @@
 
 .album-text {
 	float: left;
-	border: 1px solid #96AEBE;
+	border: 1px solid #0cf;
 	padding-bottom: 52px;
 	padding-right: 112px;
 }
@@ -31,12 +31,12 @@ a {
 	color: inherit;
 }
 .playing {
-	color: #96AEBE;
+	color: #0cf;
 }
 
 h2 {
 	margin-left: 20px;
-	color: #96AEBE;
+	color: #0cf;
 }
 
 .audiojs {
