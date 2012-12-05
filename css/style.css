@@ -141,14 +141,14 @@ h1 {
 	line-height: 20px;
 	border-radius: 5px;
 	padding: 10px;
-	-webkit-box-shadow: 0 3px 10px #121212;
+	box-shadow: 0 3px 10px #121212;
 	transition: color 0.2s linear, box-shadow linear 0.2s , background-color 0.2s linear;
-	-webkit-transition: color linear 0.2s, box-shadow linear 0.2s, background-color linear 0.2s;
+	/*-webkit-transition: color linear 0.2s, box-shadow linear 0.2s, background-color linear 0.2s;*/
 	text-decoration: none;
 }
 
 .sector.selected, .sector:hover {
-	-webkit-box-shadow: 0 3px 10px #0cf;
+	box-shadow: 0 3px 10px #0cf;
 	background-color: #383431;
 	color: #0cf;
 }
