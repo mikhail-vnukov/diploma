@@ -26,10 +26,7 @@ body {
 h1 {
 	color: #0cf;
 	border-bottom: 3px solid #0cf;
-	padding-bottom: 3px;
-}
-video {
-	width: 586px;
+	padding-bottom: 8px;
 }
 
 .site {
@@ -110,19 +107,18 @@ video {
 }
 
 .sector {
-	color: #C0B3C4;
+	color: #96AEBE;
 	background-color: #383431;
 	float: left;
 	text-align: center;
 	vertical-align: middle;
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-left: 20px;
 	width: 82px;
-	height: 30px;
-	line-height: 30px;
+	height: 20px;
+	line-height: 20px;
 	border-radius: 5px;
 	padding: 10px;
-	//background-color: rgba(56, 52, 49, 1);
 	-webkit-box-shadow: 0 3px 10px #121212;
 	transition: color 0.2s linear, box-shadow linear 0.2s , background-color 0.2s linear;
 	-webkit-transition: color linear 0.2s, box-shadow linear 0.2s, background-color linear 0.2s;
@@ -181,11 +177,49 @@ video {
 	list-style-type: none;
 	display: inline-block;
 	margin-left: 5px;
-
+	height: 26px;
+	width: 26px;
 }
+
+.myspace {
+	background: url('../images/icons/myspace.png');
+}
+
+.myspace:hover {
+	background: url('../images/icons/myspace.glow.png');
+}
+
+
+.facebook {
+	background: url('../images/icons/facebook.png');
+}
+
+.facebook:hover {
+	background: url('../images/icons/facebook.glow.png');
+}
+
+.twitter {
+	background: url('../images/icons/twitter.png');
+}
+
+.twitter:hover {
+	background: url('../images/icons/twitter.glow.png');
+}
+
+
+.vkontakte {
+	background: url('../images/icons/vkontakte.png');
+}
+
+.vkontakte:hover {
+	background: url('../images/icons/vkontakte.glow.png');
+}
+
+
 
 .copyright {
 	padding-top: 40px;
 	margin-left: 40px;
 	color: #96AEBE;
 }
+

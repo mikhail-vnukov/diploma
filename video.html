@@ -3,6 +3,44 @@
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/galleria/galleria-1.2.8.min.js"></script>
+	<script type="text/javascript" src="js/GGS.js"></script> 
+
+	<script>
+	var data = [
+	{
+		thumb: 'resources/video1.thumb.jpg',
+		image: 'resources/video1.thumb.jpg',
+		title: 'Наша репитиция)',
+
+
+		layer: '<video class="media" controls="controls"> <source src="resources/video1.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
+	},
+	{
+		thumb: 'resources/video2.thumb.jpg',
+		image: 'resources/video2.thumb.jpg',
+		title: 'Видео с концерта!',
+
+
+		layer: '<video class="media" controls="controls"> <source src="resources/video2.mp4" type="video/mp4" /> Your browser does not support this audio format. </video>'
+}
+
+
+
+];
+
+$(document).ready(function() {
+	Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+	Galleria.run("#galleria", {
+		dataSource: data,
+		showCounter: false
+	});
+});
+</script>
+
 </head>
 <body>
 	<div class="site"> 
@@ -13,7 +51,7 @@
 					<a class="sector" href="news.html">Новости</a>
 
 					<a class="sector" href="music.html">Музыка</a>
-					<a class="sector" href="#">Фото</a>
+					<a class="sector" href="photo.html">Фото</a>
 					<div class="sector selected">Видео</div>
 				</div>
 				<div class="search">
@@ -26,7 +64,18 @@
 			<div class="content">
 				<h1> Видео </h1>
 
-				<video controls="controls">
+				<div id="galleria">
+<!-- 					<video class="media" controls="controls">
+						<source src="resources/video2.mp4" type="video/mp4" />
+						Your browser does not support this audio format.
+					</video>
+
+					<a href="resources/video2.mp4"><span class="video">Видео с концерта!</span></a>
+					<a href="resources/video1.mp4"><span class="video">Наща репитиция)</span></a>
+				-->				</div>
+<!-- 
+
+				<video class="media" controls="controls">
 					<source src="resources/video2.mp4" type="video/mp4" />
 					Your browser does not support this audio format.
 				</video>
@@ -34,14 +83,14 @@
 				<p>
 					Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
 				</p>
-				<video controls="controls">
+				<video class="media" controls="controls">
 					<source src="resources/video1.mp4" type="video/mp4" />
 					Your browser does not support this audio format.
 				</video>
 
 				<p>
 					Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
-				</p>
+				</p> -->
 			</div>
 			<div class="sidebar">
 			</div>

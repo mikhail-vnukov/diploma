@@ -3,17 +3,22 @@
 		<title></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/galleria/galleria-1.2.8.min.js"></script>
+
 		<script type="text/javascript" src="js/GGS.js"></script> 
+		<script>
+		    if (Galleria) { $("body").text('Galleria works') }
+		</script>
 	</head>
 	<body>
 		<div class="site"> 
 			<div class="header">
 				<!-- <div class="navigation"> -->
 				<div class="sectors">
-					<div class="sector selected">Главная</div>
+					<a class="sector" href="photo.html">Главная</a>
 					<a class="sector" href="news.html">Новости</a>
 					<a class="sector" href="music.html">Музыка</a>
-					<a class="sector" href="photo.html">Фото</a>
+					<div class="sector selected">Фото</div>
 					<a class="sector" href="video.html">Видео</a>
 				</div>
 				<div class="search">

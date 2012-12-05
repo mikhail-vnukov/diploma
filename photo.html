@@ -3,17 +3,27 @@
 		<title></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/galleria/galleria-1.2.8.min.js"></script>
 		<script type="text/javascript" src="js/GGS.js"></script> 
+		<script>
+		$(document).ready(function() {
+			Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+			Galleria.run("#galleria");
+		});
+		</script>
 	</head>
 	<body>
 		<div class="site"> 
 			<div class="header">
 				<!-- <div class="navigation"> -->
 				<div class="sectors">
-					<div class="sector selected">Главная</div>
+					<a class="sector" href="index.html">Главная</a>
 					<a class="sector" href="news.html">Новости</a>
 					<a class="sector" href="music.html">Музыка</a>
-					<a class="sector" href="photo.html">Фото</a>
+					<div class="sector selected">Фото</div>
 					<a class="sector" href="video.html">Видео</a>
 				</div>
 				<div class="search">
@@ -25,11 +35,22 @@
 			<div class="container">
 
 				<div class="content">
-					<h1> Teenage Manager </h1>
-					<p>
-						Вас приветствует группа Teenage Manager! Мы играем западную рок-музыку сравнимую по качеству с такими группами, как The Kooks, the Libertines, Kasabian и&nbsp;другие. Группа Teenage Manager – это запоминающиеся мелодии, заводные ритмы, и&nbsp;качественный англоязычный вокал. Ну что тут много говорить, <a href="music.html">включайте скорее музыку!</a>
-					</p>
-					<img width="586px" src="images/interview.jpg"></jpg> 
+					<h1> Photos </h1>
+					<div id="galleria">
+						<img src="resources/photos/1.jpg"></img>
+						<img src="resources/photos/2.jpg"></img>
+						<img src="resources/photos/3.jpg"></img>
+						<img src="resources/photos/4.jpg"></img>
+						<img src="resources/photos/5.jpg"></img>
+						<img src="resources/photos/6.jpg"></img>
+						<img src="resources/photos/7.jpg"></img>
+						<img src="resources/photos/8.jpg"></img>
+						<img src="resources/photos/9.jpg"></img>
+						<img src="resources/photos/10.jpg"></img>
+						<img src="resources/photos/11.jpg"></img>
+
+					</div>
+
 				</div>
 
 				<div class="sidebar">
