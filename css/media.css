@@ -1,11 +1,17 @@
 #galleria { 
 	width: 586px; 
 	height: 400px; 
-	background: #000;
+	background: #383431;
+	border-radius: 5px;
+	box-shadow: 0 3px 10px #121212;
 }
 
 .media {
 	height: 329px;
 	width: 586px;
+}
+
+.galleria-container {
+	background: transparent !important;
 }
 
